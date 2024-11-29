@@ -1,5 +1,17 @@
 # codemod-missing-await-act
 
+## 0.3.1
+
+### Patch Changes
+
+- [#58](https://github.com/eps1lon/codemod-missing-await-act/pull/58) [`ee5204e`](https://github.com/eps1lon/codemod-missing-await-act/commit/ee5204e429f3984d42fe15c9804fee34e56a109b) Thanks [@eps1lon](https://github.com/eps1lon)! - Support `React.act`
+
+  We previously didn't consider this method as newly async.
+
+  Even though it isn't `async` yet, we should start codemodding it as if it were.
+  We already codemodded `unstable_act` in the same way.
+  `unstable_act` is renamed to `act` in React 19, so we should be ready for this change.
+
 ## 0.3.0
 
 ### Minor Changes
